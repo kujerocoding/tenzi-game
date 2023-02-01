@@ -30,22 +30,24 @@ const App = () => {
     }
   }
 
-
-
   function allNewDice(){
     const newDice = [];
         for (let i = 0; i<10; i++){
-        
         newDice.push(generateNewDie())
       }
-      
       return newDice
     }
 
   function rollDice(){
-    setDice(prevDice => prevDice.map(die => {
-      return die.isHeld ? die : generateNewDie()
-    }))
+    if(!tenzi) {
+      setDice(prevDice => prevDice.map(die => {
+        return die.isHeld ? die : generateNewDie()
+      }))
+    }else{
+      setTenzi(false)
+      setDice(allNewDice())
+    }
+   
   }
 
   function holdDice(id){
