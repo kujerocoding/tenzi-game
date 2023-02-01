@@ -48,6 +48,8 @@ const App = () => {
 
   return (
     <div className='main-container'>
+      <h1>Tenzi</h1>
+      <p>Roll until all dice are the same. Click each die to freeze it at its current value between rolls.</p>
       <div className='dice-container'>
       {diceElements}
       </div>
