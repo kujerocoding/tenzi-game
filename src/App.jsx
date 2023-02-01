@@ -70,6 +70,7 @@ const App = () => {
       <div className='dice-container'>
       {diceElements}
       </div>
+      <h3>{tenzi ? "You've won!" : ""}</h3>
       <button onClick={rollDice}>{tenzi ? "New Game" : "Roll"}</button>
     </div>
   )
