@@ -43,12 +43,16 @@ body{
 }
 
 button{
-  all: unset;
-  padding: 20px;
-  background-color: orangered;
-  color: whitesmoke;
-  font-size: 2rem;
-  border-radius: 10px;
   width: 30%;
-  text-align: center;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: chocolate;
+  color: white;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+button:active{
+  box-shadow: inset 10px 10px 10px -5px rgba(0, 0, 0, 0.5);
 }
