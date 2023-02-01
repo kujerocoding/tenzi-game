@@ -1,9 +1,11 @@
 import React from 'react'
+import './App.css'
+import Die from './components/Die'
 
 const App = () => {
   return (
-    <div>
-      Tenzi
+    <div className='main-container'>
+      <Die />
     </div>
   )
 }

@@ -1,0 +1,37 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #333;
+  color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.main-container{
+  background-color: blanchedalmond;
+  padding: 20px;
+  color: #333;
+}
+
+.dice-container{
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.die-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  background-color: whitesmoke;
+  font-size: 2rem;
+  font-weight: bold;
+  border-radius: 10px;
+}
