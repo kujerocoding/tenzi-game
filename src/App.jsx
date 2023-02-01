@@ -22,6 +22,7 @@ const App = () => {
       <div className='dice-container'>
       {diceElements}
       </div>
+      <button>Roll</button>
     </div>
   )
 }
