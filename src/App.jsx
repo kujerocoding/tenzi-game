@@ -26,14 +26,16 @@ const App = () => {
   }
 
   function holdDice(id){
-    console.log(id)
+    setDice(prevDice => prevDice.map(die => 
+      die.id === id ? {...die, isHeld: !die.isHeld} : die
+    ))
   }
 
   const diceElements = dice.map(die => 
         <Die key={die.id} 
         value={die.value} 
         isHeld={die.isHeld} 
-        handleClick={() => {holdDice(die.id)}} />)
+        handleClick={() => holdDice(die.id)} />)
 
   return (
     <div className='main-container'>

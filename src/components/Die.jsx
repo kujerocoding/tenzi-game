@@ -7,7 +7,10 @@ const Die = (props) => {
     }
 
   return (
-    <div className="die-container" style={styles} onClick={props.handleClick}>
+    <div className="die-container" 
+        style={styles} 
+        onClick={props.handleClick}>
+            
       {props.value}
     </div>
   )
